@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google Tag Manager：公開時に有効化（このコメントアウトを外す）。ローカル確認で本番タグを発火させないため無効にしている。
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZSKL8P7');</script>
+End Google Tag Manager -->
+
+<title>横浜赤レンガ倉庫のランチ｜Re : Wharf（リワーフ）ポップオーバーとステーキハウスのランチ</title>
+<meta name="description" content="横浜赤レンガ倉庫2号館3階のステーキ＆シーフードレストラン Re : Wharf のランチ。平日限定のポップオーバーランチセット ¥3,000、ハンバーガー ¥4,500、Lボーンランチコース ¥8,500（税込・サービス料10%別）。Web予約は24時間受付。">
+<meta name="format-detection" content="telephone=no">
+<!-- ドラフトのため noindex。公開時に要否を判断する。 -->
+<meta name="robots" content="noindex">
+
+<style>
+/* 配色と書体は既存ディナーLP（/dinner-promotion/）の promotion.css とテーマ設定に合わせている */
+:root {
+  --ink: #3E3E3E;
+  --gold: #96734B;
+  --gold-deep: #896030;
+  --cream: #FFFDF6;
+  --sand: #F0EAD8;
+  --night: #252525;
+  /* ヒーローのパネル色。ヒーロー写真のテーブルクロス（平均 #7c4124）から採り、少し沈めた */
+  --wine: #6B3A2B;
+  --wine-deep: #4A261B;
+  --gold-light: #E8C9A0;
+  --serif: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  --bar-h: 72px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--ink);
+  background: var(--cream);
+  padding-bottom: calc(var(--bar-h) + env(safe-area-inset-bottom));
+  overflow-wrap: anywhere;
+}
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, p, ul, dl, dd, figure, table { margin: 0; padding: 0; }
+ul { list-style: none; }
+a { color: inherit; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+.wrap { max-width: 1130px; margin-inline: auto; padding-inline: 20px; }
+.band { padding-block: 64px; }
+.band--sand { background: var(--sand); }
+.band--white { background: #fff; }
+
+.en {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 1.375rem; line-height: 1.2; color: var(--gold-deep);
+  margin-bottom: 14px;
+}
+.en::after { content: ""; width: 1.6em; height: 1px; background: var(--gold); }
+h2 {
+  font-size: 1.625rem; line-height: 1.55; font-weight: 600;
+  margin-bottom: 20px;
+  word-break: auto-phrase; text-wrap: balance;
+}
+h3 { font-size: 1.125rem; line-height: 1.6; font-weight: 600; }
+.gold { color: var(--gold); }
+.lead { margin-bottom: 28px; }
+.note { font-size: 0.8125rem; line-height: 1.75; }
+
+/* ---------- ボタン ---------- */
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 56px; padding: 10px 20px;
+  font-size: 1.125rem; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em;
+  text-decoration: none; text-align: center;
+  border: 1px solid var(--gold-deep);
+}
+.btn--web { background: var(--gold-deep); color: #fff; box-shadow: inset 0 0 0 3px var(--gold-deep), inset 0 0 0 4px rgba(255,255,255,0.45); }
+.btn--tel { background: #fff; color: var(--ink); }
+.btn small { display: block; font-size: 0.75rem; font-weight: 400; letter-spacing: 0; }
+.btn:hover { opacity: 0.85; }
+.cta { margin-top: 28px; }
+.cta .note { margin-top: 10px; text-align: center; }
+
+/* ---------- ファーストビュー ----------
+   写真はプロ撮影の原本（3956×4945、lp/_originals/）を 2000px に縮小したもの。
+   スマホは 4:5 のまま全幅、PC は右半分に裁ち落としで敷く。どちらも元の大きさを超えて引き伸ばさない。
+   パネルの色は写真のテーブルクロスから採っているので、写真と地がひと続きに見える。 */
+.hero { position: relative; isolation: isolate; display: grid; grid-template-rows: auto 1fr; min-height: 100svh; background: var(--wine); color: #fff; }
+.hero__bg { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 38% 50%; }
+/* 文字の載る側だけを、写真のクロスと同系のワインレッドで沈める。スマホは下から、PCは右から */
+.hero::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 180px; z-index: -1; pointer-events: none; background: linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,0)); }
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(to top, rgba(74,38,27,.96) 0, rgba(74,38,27,.9) 36%, rgba(74,38,27,.5) 54%, rgba(74,38,27,0) 72%);
+}
+.hero__bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 20px; }
+.hero__logo { width: 84px; }
+.hero__place { font-size: 0.8125rem; line-height: 1.5; text-align: right; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
+.hero__text { align-self: end; padding: 40px 20px calc(var(--bar-h) + 24px); }
+.hero h1 {
+  font-size: 1.6875rem; line-height: 1.45; font-weight: 600;
+  word-break: auto-phrase; text-wrap: balance;
+  margin-bottom: 14px;
+}
+.hero__sub { font-size: 0.9375rem; margin-bottom: 22px; color: rgba(255,253,246,.86); }
+.hero__price {
+  border-top: 1px solid rgba(255,253,246,.28); border-bottom: 1px solid rgba(255,253,246,.28);
+  padding-block: 14px; margin-bottom: 22px;
+}
+.hero__price-name { font-size: 0.875rem; line-height: 1.6; }
+.hero__price-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+.hero__price .note { color: rgba(255,253,246,.78); }
+.hero__yen { font-size: 2.75rem; line-height: 1.2; color: var(--gold-light); }
+.hero .btn--web { background: var(--cream); color: var(--wine-deep); border-color: var(--cream); box-shadow: none; }
+.hero .btn--web:hover { background: #fff; opacity: 1; }
+.hero__hours { display: none; font-size: 0.875rem; margin-top: 16px; color: rgba(255,253,246,.86); } /* スマホでは写真を見せる面積を優先して隠す（営業時間はアクセス欄にある） */
+
+/* ---------- メニューカード（店頭のランチメニューの組み方に寄せる） ---------- */
+.menu-card {
+  background: #fff; border: 1px solid var(--gold);
+  outline: 1px solid var(--gold); outline-offset: -7px;
+  padding: 34px 22px 30px; text-align: center;
+}
+.menu-card__name { font-size: 1.375rem; line-height: 1.4; font-weight: 600; }
+.menu-card__kana { font-size: 0.75rem; }
+.menu-card__per { margin-top: 14px; font-size: 0.875rem; line-height: 1.5; }
+.menu-card__yen { font-size: 2.25rem; line-height: 1.25; color: var(--gold-deep); }
+.rule { display: flex; align-items: center; gap: 8px; margin: 18px auto; max-width: 240px; }
+.rule::before, .rule::after { content: "•"; line-height: 1; }
+.rule span { flex: 1; height: 1px; background: var(--ink); }
+.menu-card__items li { padding-block: 5px; line-height: 1.6; }
+.menu-card__extra { margin-top: 16px; padding-top: 14px; border-top: 1px dotted var(--gold); font-size: 0.875rem; line-height: 1.7; }
+
+.popover-photo { margin: 0 0 28px; }
+.popover-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 45%; }
+
+.terms { margin-top: 28px; }
+.terms h3 { margin-bottom: 10px; }
+.terms li { position: relative; padding-left: 1.1em; font-size: 0.9375rem; line-height: 1.75; margin-bottom: 8px; }
+.terms li::before { content: ""; position: absolute; left: 0; top: 0.78em; width: 0.45em; height: 1px; background: var(--gold); }
+
+/* ---------- コースと価格 ---------- */
+.prices { width: 100%; border-collapse: collapse; border-top: 1px solid var(--ink); margin-bottom: 10px; }
+.prices caption { text-align: left; font-size: 0.875rem; padding-bottom: 8px; }
+.prices th, .prices td { padding: 14px 0; border-bottom: 1px solid #CCC3AE; vertical-align: baseline; font-weight: 400; }
+.prices th { text-align: left; line-height: 1.55; padding-right: 12px; }
+.prices th small { display: block; font-size: 0.8125rem; color: var(--gold-deep); }
+.prices td { text-align: right; white-space: nowrap; font-size: 1.375rem; line-height: 1.2; }
+
+.courses { display: grid; gap: 40px; margin-top: 44px; }
+.course img { width: 100%; }
+.course__body { padding-top: 16px; }
+.course__head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--gold); padding-bottom: 8px; margin-bottom: 12px; }
+.course__yen { font-size: 1.5rem; line-height: 1.2; white-space: nowrap; color: var(--gold-deep); }
+.course__body > p { font-size: 0.9375rem; }
+.course dl { margin-top: 12px; font-size: 0.875rem; line-height: 1.75; }
+.course dt { font-weight: 600; margin-top: 8px; }
+
+.walkin { margin-top: 44px; padding: 24px 20px; background: #fff; border: 1px solid #CCC3AE; }
+.walkin h3 { margin-bottom: 6px; }
+.walkin .prices { margin-top: 12px; }
+
+/* ---------- ロケーション ---------- */
+.photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-block: 28px; }
+.photos img { width: 100%; height: 100%; object-fit: cover; }
+.photos .wide { grid-column: 1 / -1; }
+.box { border: 1px solid var(--gold); padding: 22px 20px; background: var(--cream); }
+.box h3 { margin-bottom: 10px; }
+
+/* ---------- 利用シーン ---------- */
+.scenes { display: grid; gap: 28px; }
+.scene { border-top: 1px solid var(--gold); padding-top: 16px; }
+.scene h3 { margin-bottom: 8px; }
+.scene p { font-size: 0.9375rem; }
+
+/* ---------- お客様の声（Google の口コミ） ---------- */
+.rating { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 28px; }
+.rating__num { flex: none; font-size: 2.75rem; line-height: 1; color: var(--gold-deep); }
+.stars { flex: none; display: block; width: 110px; height: 20px; }
+.rating__meta { flex: 1 1 200px; min-width: 0; font-size: 0.8125rem; line-height: 1.6; }
+.rating__meta a { color: var(--gold-deep); }
+.voices { display: grid; gap: 16px; }
+.voice { position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--gold); padding: 36px 22px 20px; }
+.voice::before { content: "\201C"; position: absolute; top: 4px; left: 16px; font-family: Georgia, "Times New Roman", serif; font-size: 4rem; line-height: 1; color: var(--gold-light); }
+.voice__text { font-size: 0.9375rem; line-height: 1.85; }
+.voice__meta { display: flex; align-items: center; gap: 10px; margin-top: auto; padding-top: 12px; }
+.voice__text { margin-bottom: 16px; }
+.voice__meta { padding-top: 12px; border-top: 1px solid var(--sand); font-size: 0.8125rem; color: var(--gold-deep); }
+.voice__stars { letter-spacing: 2px; color: var(--gold); }
+.voices + .note { margin-top: 16px; }
+@media (min-width: 900px) {
+  .voices { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .voice { padding: 44px 26px 22px; }
+  .voice::before { left: 20px; }
+}
+
+/* ---------- アクセス ---------- */
+.info { border-top: 1px solid var(--ink); }
+.info div { display: grid; grid-template-columns: 5.5em 1fr; gap: 12px; padding: 14px 0; border-bottom: 1px solid #CCC3AE; }
+.info dt { font-weight: 600; }
+.info dd { line-height: 1.75; }
+.maplink { display: inline-block; margin-top: 18px; }
+
+/* ---------- よくある質問 ---------- */
+.faq details { border-bottom: 1px solid #CCC3AE; }
+.faq details:first-of-type { border-top: 1px solid var(--ink); }
+.faq summary {
+  list-style: none; cursor: pointer; position: relative;
+  padding: 16px 34px 16px 1.9em; line-height: 1.6; font-weight: 600;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before { content: "Q."; position: absolute; left: 0; color: var(--gold-deep); }
+.faq summary::after { content: "+"; position: absolute; right: 6px; top: 12px; font-size: 1.375rem; font-weight: 400; color: var(--gold-deep); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { position: relative; padding: 0 0 18px 1.9em; font-size: 0.9375rem; }
+.faq details p::before { content: "A."; position: absolute; left: 0; color: var(--gold-deep); font-weight: 600; }
+
+/* ---------- 予約ブロック・フッター ---------- */
+.reserve { background: var(--night); color: #fff; text-align: center; }
+.reserve .en { justify-content: center; color: #DEBC95; }
+.reserve .en::before { content: ""; width: 1.6em; height: 1px; background: var(--gold); }
+.reserve__btns { display: grid; gap: 14px; margin: 24px auto 20px; max-width: 460px; }
+.reserve .note { text-align: left; max-width: 460px; margin-inline: auto; }
+.footer { background: #000; color: #fff; text-align: center; padding: 36px 20px 40px; font-size: 0.8125rem; line-height: 1.8; }
+.footer img { width: 96px; margin: 0 auto 14px; }
+
+/* ---------- 画面下の固定予約バー ---------- */
+.bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+  background: rgba(0,0,0,0.88);
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+}
+.bar__in { display: flex; gap: 8px; max-width: 560px; margin-inline: auto; }
+.bar .btn { min-height: 56px; }
+.bar .btn--web { flex: 1; }
+.bar .btn--tel { width: 56px; padding: 0; flex: none; }
+.bar svg { width: 22px; height: 22px; }
+
+/* ---------- 900px以上 ---------- */
+@media (min-width: 900px) {
+  body { font-size: 17px; }
+  .wrap { padding-inline: 40px; }
+  .band { padding-block: 104px; }
+  h2 { font-size: 2.125rem; margin-bottom: 28px; }
+  .en { font-size: 1.625rem; }
+
+  /* PC: 写真を画面いっぱいに敷き、文字は右側（サラダの上）に載せる。ポップオーバーの籠（左）は隠さない。
+     沈め色の幅は本文の列幅（1130px）に合わせて計算しているので、画面が広くても文字の下だけが沈む。 */
+  .hero { min-height: min(100svh, 860px); }
+  .hero__bg { object-position: 50% 42%; }
+  .hero__hours { display: block; }
+  .hero::after {
+    inset: 0 0 0 auto; width: calc(max(40px, (100vw - 1130px) / 2) + 600px + 320px);
+    background: linear-gradient(to left, rgba(74,38,27,.94) 0, rgba(74,38,27,.9) calc(100% - 320px), rgba(74,38,27,0) 100%);
+  }
+  .hero__bar { width: 100%; max-width: 1130px; margin-inline: auto; padding: 24px 40px 0; }
+  .hero__logo { width: 112px; }
+  .hero__place { font-size: 0.9375rem; }
+  .hero__text { align-self: center; width: 100%; max-width: 1130px; margin-inline: auto; padding: 40px 40px 96px; display: flex; justify-content: flex-end; }
+  .hero__in { width: 100%; max-width: 540px; }
+  .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+  .hero__sub { font-size: 1rem; }
+  .hero .btn { max-width: 380px; }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+  .cta .btn { max-width: 380px; margin-inline: auto; } /* 上のメニューカードに対して中央に置く（キャンバスのコメント対応） */
+  .cta .note { text-align: center; }
+  /* PC: 区画ごとの幅をそろえる（本文の列幅 1130px に合わせ、表と注意書きは右側を空けない） */
+  .prices { max-width: none; }
+  .wrap.narrow { max-width: 1130px; }
+  ul.terms { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+  .info { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+  .info div { grid-template-columns: 6.5em 1fr; }
+  .courses { grid-template-columns: 1fr 1fr; gap: 56px; }
+  .course img { aspect-ratio: 5 / 3; object-fit: cover; }
+  .walkin { padding: 32px 36px; }
+  .photos { grid-template-columns: 2fr 1fr 1fr; gap: 12px; }
+  .photos .wide { grid-column: auto; }
+  .photos img { aspect-ratio: auto; height: 320px; }
+  .scenes { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .narrow > * { max-width: none; }
+  .info div { grid-template-columns: 8em 1fr; }
+  .reserve__btns { grid-template-columns: 1fr 1fr; max-width: 760px; }
+  .reserve .note { max-width: 760px; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript)：公開時に有効化（このコメントアウトを外す）。
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZSKL8P7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+End Google Tag Manager (noscript) -->
+
+<!--
+  予約リンクと電話番号は、ページ末尾の <script> にある RESERVE_URL / TEL の1か所で管理している。
+  各リンクの href はJSが無効な環境向けのフォールバックで、表示時に定数の値で上書きされる。
+  data-cta は計測でボタン位置を見分けるための目印。
+-->
+
+<header class="hero">
+  <div class="hero__bar">
+    <img class="hero__logo" src="img/logo.png" width="568" height="390" alt="Re : Wharf STEAK &amp; SEAFOOD">
+    <p class="hero__place">横浜赤レンガ倉庫<br>2号館 3階</p>
+  </div>
+  <!-- 画像: 社内ドライブ「Re:Wharf / 2025.11 リワーフポップオーバー / プリントサイズ」の 名称未設定-14.jpg（プロ撮影、3956×4945）。
+       原本は lp/_originals/lunch/hero_popover_set.jpg。Web用に長辺 3000px と 1500px に縮小して img/ に置いている。 -->
+  <img class="hero__bg" src="img/hero.jpg" srcset="img/hero-sm.jpg 1200w, img/hero.jpg 2400w" sizes="100vw" width="2400" height="3000" alt="かごに山盛りのポップオーバーと、ステーキ、サラダ、デザートを並べたランチセットを真上から" fetchpriority="high">
+  <div class="hero__text">
+    <div class="hero__in">
+      <h1>横浜赤レンガ倉庫で、焼きたてポップオーバーのランチを。</h1>
+      <p class="hero__sub">NYスタイルのステーキ＆シーフードレストラン Re&nbsp;:&nbsp;Wharf のランチタイム。名物のポップオーバーはおかわり自由。ハンバーガーやLボーンステーキのランチコースもご用意しています。</p>
+      <div class="hero__price">
+        <p class="hero__price-name">平日限定 The Popover Selection Lunch Set</p>
+        <p class="hero__price-row"><span class="hero__yen">¥3,000</span><span class="note">税込・サービス料10%別／1日40食</span></p>
+      </div>
+      <a class="btn btn--web" data-reserve data-cta="hero" href="https://www.tablecheck.com/ja/shops/re-wharf/reserve">ランチを予約する</a>
+      <p class="hero__hours">ランチ 11:00〜15:00（L.O. 14:30）</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ========== 名物ポップオーバー ========== -->
+<section class="band" id="popover">
+  <div class="wrap split">
+    <div>
+      <p class="en">Popover</p>
+      <h2>名物のポップオーバーを、<span class="gold">おかわり自由</span>で。</h2>
+      <p class="lead">焼きたてのポップオーバーに、旬の食材を合わせた特製プレート。お食事としても、少し贅沢なブランチとしてもお楽しみいただける、平日限定のランチセットです。</p>
+      <!-- 要確認: ポップオーバーそのものの説明（食感、添えているバターやジャムなど）は情報源に記載が無いため書いていない。店舗に確認して追記する。 -->
+      <figure class="popover-photo">
+        <!-- 画像: 社内ドライブ「Re:Wharf / 2025.11 リワーフポップオーバー / プリントサイズ」の 名称未設定-6.jpg を 1600px に縮小。原本は lp/_originals/lunch/popover_hand.jpg -->
+        <img src="img/popover-hand.jpg" width="1280" height="1600" alt="焼きたてのポップオーバーを手で割り、中の空洞を見せている" loading="lazy" decoding="async">
+      </figure>
+
+      <div class="terms">
+        <h3>ご予約の前に</h3>
+        <ul>
+          <li>平日（月〜金）限定、1日40食のご用意です。</li>
+          <!-- 要確認: 予約ページのご予約可能日が「7月1日〜10月30日」。提供終了日なのか、予約受付枠の区切りなのか。祝日にあたる平日の扱いも未確認。 -->
+          <li>ご予約時間は 11:00、11:30、13:00、13:30 の4つです。</li>
+          <li>お席は店内席、ご予約のお時間から90分制です。</li>
+          <li>テーブルのご利用人数分でのご注文をお願いしています。他のメニューとの併用はできません。</li>
+          <li>お料理内容の変更は承っておりません。</li>
+          <li>「お席のみ」のご予約ではご注文いただけません。予約ページで「The Popover Selection Lunch Set」をお選びください。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <div class="menu-card">
+        <p class="menu-card__name">The Popover Selection Lunch Set</p>
+        <p class="menu-card__kana">ザ・ポップオーバー・セレクション</p>
+        <p class="menu-card__per">お一人様</p>
+        <p class="menu-card__yen">¥3,000</p>
+        <p class="note">税込・サービス料10%別</p>
+        <div class="rule"><span></span></div>
+        <ul class="menu-card__items">
+          <li>ポップオーバー（おかわり自由）</li>
+          <li>本日のスープ または<br>クラシックベジボウル（サラダ）</li>
+          <li>ミートプレート</li>
+        </ul>
+        <p class="menu-card__extra">お一人様 ＋¥800 で、ブラータチーズと季節のフルーツを追加できます。ご予約時に、テーブルの人数分でお申し込みください（当日の追加はできません）。</p>
+      </div>
+      <div class="cta">
+        <a class="btn btn--web" data-reserve data-cta="popover" href="https://www.tablecheck.com/ja/shops/re-wharf/reserve">ランチを予約する</a>
+        <p class="note">ご予約で埋まりやすいセットです。お早めのご予約をおすすめします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ランチのコースと価格 ========== -->
+<section class="band band--sand" id="lunch">
+  <div class="wrap">
+    <p class="en">Lunch</p>
+    <h2>ステーキハウスの一皿を、<span class="gold">ランチの価格</span>で。</h2>
+    <p class="lead">ディナータイムよりもリーズナブルに、Re&nbsp;:&nbsp;Wharf の肉料理と横浜のロケーションを楽しめるのがランチタイムです。</p>
+
+    <table class="prices">
+      <caption>Webで予約できるランチ</caption>
+      <tbody>
+        <tr><th scope="row">The Popover Selection Lunch Set<small>平日限定、1日40食</small></th><td>¥3,000</td></tr>
+        <tr><th scope="row">Re&nbsp;:&nbsp;Wharfハンバーガー＋フリードリンク付き</th><td>¥4,500</td></tr>
+        <tr><th scope="row">極上Lボーンランチコース<small>毎日ご提供・2名様より</small></th><td>¥8,500</td></tr>
+      </tbody>
+    </table>
+    <p class="note">価格はお一人様、税込です。別途サービス料10%を頂戴します。</p>
+    <!-- 要確認: 極上Lボーンランチコースの価格。予約ページ（TableCheck）は ¥8,500、公式ランチメニューPDFの3ページ目は「8,000-」。ここでは予約ページの表記に合わせている。 -->
+    <!-- 店舗確認済み（2026-10-07）: 極上Lボーンランチコースは毎日ランチタイムに提供。ウィークエンドランチコース（¥5,000）は土・日・祝日限定。ハンバーガーの提供曜日は未確認。 -->
+
+    <div class="courses">
+      <article class="course">
+        <img src="img/reWhar_hamburger_main_img_sp.jpg" width="786" height="308" alt="Re : Wharfハンバーガーとフライドポテト" loading="lazy" decoding="async">
+        <div class="course__body">
+          <div class="course__head">
+            <h3>Re&nbsp;:&nbsp;Wharfハンバーガー＋フリードリンク付き</h3>
+            <p class="course__yen">¥4,500</p>
+          </div>
+          <p>120gの黒毛和牛100%パティを2枚。ステーキと同じロースターで焼き上げ、ブリオッシュのバンズと、赤ワインと赤ワインビネガーを煮詰めた特製ソースで仕上げた、ランチ限定のハンバーガーです。</p>
+          <dl>
+            <dt>内容</dt>
+            <dd>Re&nbsp;:&nbsp;Wharfハンバーガー、フライドポテト、フリードリンク（ソフトドリンクとハイボール。ラストオーダーは90分）</dd>
+            <dt>ご利用条件</dt>
+            <dd>最大滞在時間はご予約のお時間から2時間です。</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="course">
+        <img src="img/lunch_sec_main_img_sp.png" width="504" height="395" alt="Lボーンステーキを中心にしたランチコースの料理" loading="lazy" decoding="async">
+        <div class="course__body">
+          <div class="course__head">
+            <h3>極上Lボーンランチコース</h3>
+            <p class="course__yen">¥8,500</p>
+          </div>
+          <p>USプライムビーフのLボーンステーキを、ランチタイム限定の特別価格で。ステーキハウスらしい一皿を、コースでゆっくりお楽しみいただけます。</p>
+          <dl>
+            <dt>内容</dt>
+            <dd>クラシックシーザーサラダ、本日のスープ、パン、USプライムビーフ Lボーンステーキ、本日のデザート</dd>
+            <!-- 要確認: コーヒー／紅茶の有無。公式ランチページ（/menu/lunch/）のコース内容には「コーヒー / 紅茶」があるが、予約ページとPDFには無い。ここでは載せていない。 -->
+            <dt>ご利用条件</dt>
+            <dd>毎日のランチタイムに、2名様よりご注文いただけます。最大滞在時間はご予約のお時間から2時間です。仕入れ状況により内容が変わる場合があります。</dd>
+          </dl>
+        </div>
+      </article>
+    </div>
+
+    <div class="walkin">
+      <h3>当日お選びいただけるメニュー</h3>
+      <p class="note">「お席のみ」でご予約のうえ、当日お選びください。</p>
+      <table class="prices">
+        <tbody>
+          <tr><th scope="row">ビーフステーキライス<small>サラダ、1ドリンク付。ガーリック抜きも承ります</small></th><td>¥2,900</td></tr>
+          <tr><th scope="row">ウィークエンドランチコース<small>土・日・祝日限定。クラシックシーザーサラダ、本日のスープ、パン、本日の魚料理または肉料理、本日のデザート、コーヒーまたは紅茶</small></th><td>¥5,000</td></tr>
+        </tbody>
+      </table>
+      <p class="note">公式ランチメニューに記載の価格です。お会計の際、サービス料10%を加算します。<br><a href="https://rewharf.jp/wp-content/themes/tenjiku_tcd091/pdf/lunch.pdf">公式ランチメニュー（PDF）を見る</a></p>
+      <!-- 要確認: この2品は公式ランチメニューPDFにのみ記載（予約ページには無い）。現行の提供有無・価格・税込表記かどうかを店舗に確認する。 -->
+    </div>
+
+    <div class="cta">
+      <a class="btn btn--web" data-reserve data-cta="lunch" href="https://www.tablecheck.com/ja/shops/re-wharf/reserve">ランチを予約する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== お客様の声 ========== -->
+<section class="band" id="voices">
+  <div class="wrap">
+    <p class="en">Voices</p>
+    <h2>お客様の声。</h2>
+    <div class="rating">
+      <span class="rating__num">4.5</span>
+      <svg class="stars" viewBox="0 0 110 20" aria-hidden="true"><defs><linearGradient id="half"><stop offset="50%" stop-color="#96734B"/><stop offset="50%" stop-color="#E8C9A0"/></linearGradient></defs><path transform="translate(0.0 0)" fill="#96734B" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.3 1.2 6.1L10 15.1 4.5 18l1.2-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" fill="#96734B" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.3 1.2 6.1L10 15.1 4.5 18l1.2-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" fill="#96734B" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.3 1.2 6.1L10 15.1 4.5 18l1.2-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" fill="#96734B" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.3 1.2 6.1L10 15.1 4.5 18l1.2-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" fill="url(#half)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.3 1.2 6.1L10 15.1 4.5 18l1.2-6.1L1.2 7.6l6.1-.8z"/></svg>
+      <p class="rating__meta">Google の口コミ 730件<br><a href="https://maps.google.com/?cid=14999259773504996999" target="_blank" rel="noopener">Google マップで口コミを見る</a></p>
+    </div>
+    <ul class="voices">
+      <li class="voice">
+        <p class="voice__text">焼きたてのポップオーバーは外カリカリ中モチモチでとっても美味しかったです。付け合わせのソース（塩バターホイップ、ブルーベリーソース、メープルシロップ）がどれも相性が良く、飽きずにたくさん食べられました！</p>
+        <p class="voice__meta"><span class="voice__stars" aria-label="星5つ">★★★★★</span>ランチで利用</p>
+      </li>
+      <li class="voice">
+        <p class="voice__text">平日ランチ限定のポップオーバーセットは、焼き立て＆おかわり自由で満足感たっぷり。ミートプレートやベジボウル（またはスープ）も付いて、ボリューム・内容ともに大満足でした。歴史ある空間でゆったり過ごせ、女子会やデートにもおすすめです。</p>
+        <p class="voice__meta"><span class="voice__stars" aria-label="星5つ">★★★★★</span>ランチで利用</p>
+      </li>
+      <li class="voice">
+        <p class="voice__text">お友達やカップル、おひとりの方など様々なかんじでしたが、雰囲気も素敵でゆっくりできます。……もっと沢山食べたかったけど、意外とお腹がいっぱいになりました。……ちょっと贅沢なランチにオススメです</p>
+        <p class="voice__meta"><span class="voice__stars" aria-label="星5つ">★★★★★</span>平日ランチ・おひとりで利用</p>
+      </li>
+    </ul>
+    <p class="note">Google マップに投稿された口コミから一部を抜粋しています（2026年10月時点、省略箇所は……で示しています）。</p>
+  </div>
+</section>
+
+<!-- ========== テラスとロケーション ========== -->
+<section class="band band--white" id="location">
+  <div class="wrap">
+    <p class="en">Location</p>
+    <h2>赤レンガ倉庫2号館の3階。<span class="gold">海風のテラス</span>と、レンガのダイニング。</h2>
+    <p>テラス席では、心地よい海風のなかで、みなとみらいの景色を眺めながらお食事いただけます。店内は約150席。赤レンガ倉庫のレンガを活かしたメインダイニングのほか、窓際の席や個室もご用意しています。</p>
+
+    <div class="photos">
+      <img class="wide" src="img/seating_img03_sp.jpg" width="706" height="354" alt="赤レンガの壁に沿ってソファが並ぶテラス席" loading="lazy" decoding="async">
+      <img src="img/560x560-exper27-1.jpg" width="560" height="560" alt="テラス席のテーブルと、その先に広がる海" loading="lazy" decoding="async">
+      <img src="img/560x560-exper05-2.jpg" width="560" height="560" alt="窓際の席で食事を楽しむ二人" loading="lazy" decoding="async">
+    </div>
+
+    <div class="box">
+      <h3>テラス席のご予約について</h3>
+      <ul class="terms" style="margin-top:0">
+        <li>テラス席を確約できるプランを、極上Lボーンランチコース（2名様限定、¥8,500）などでご用意しています。</li>
+        <li>雨、強風、気温などの天候により、テラス席をご利用いただけない場合があります。その際は、店内に空席がある場合のみご案内します。</li>
+        <li>The Popover Selection Lunch Set は店内席でのご案内です。</li>
+      </ul>
+      <!-- 要確認: テラス席のペット同伴。公式LPの「よくある質問」は可、「お席のご案内」は不可と書かれており食い違うため、このページには載せていない。 -->
+    </div>
+  </div>
+</section>
+
+<!-- ========== 利用シーン ========== -->
+<section class="band" id="scene">
+  <div class="wrap">
+    <p class="en">Scene</p>
+    <h2>こんな日のランチに。</h2>
+    <div class="scenes">
+      <div class="scene">
+        <h3>友人やご家族との食事に</h3>
+        <p>テーブル席は2名様から最大8名様まで。お子様連れも歓迎です。お子様メニューのご用意はありませんが、可能な限り対応します。</p>
+      </div>
+      <div class="scene">
+        <h3>デートや記念日のランチに</h3>
+        <p>窓際の席や、海風のテラス席で。メッセージプレート（有料）は、ご予約時にお申し込みいただけます。</p>
+      </div>
+      <div class="scene">
+        <h3>赤レンガ倉庫を訪れた日に</h3>
+        <p>ドレスコードはなく、おひとりでもご利用いただけます。クロークでお召し物やバッグをお預かりします。ご予約なしでもご来店いただけますが、状況によりお待ちいただく場合があります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== アクセスと営業時間 ========== -->
+<section class="band band--white" id="access">
+  <div class="wrap narrow">
+    <p class="en">Access</p>
+    <h2>アクセスと営業時間</h2>
+    <dl class="info">
+      <div><dt>店名</dt><dd>Re&nbsp;:&nbsp;Wharf（リワーフ）</dd></div>
+      <div><dt>住所</dt><dd>〒231-0001<br>神奈川県横浜市中区新港1丁目1番2号<br>横浜赤レンガ倉庫2号館 3階</dd></div>
+      <div><dt>最寄り駅</dt><dd>馬車道駅より徒歩約6分</dd></div>
+      <!-- 要確認: 「馬車道駅 6分」の出どころは社内の campaign-design.md のみ。公式サイトに駅からの所要時間の記載は無い。駐車場・定休日も情報源に記載が無いため載せていない。 -->
+      <div><dt>ランチ</dt><dd>11:00〜15:00（L.O. 14:30）</dd></div>
+      <div><dt>営業時間</dt><dd>11:00〜23:00（L.O. 22:00）<br><span class="note">＊施設営業時間に準じます</span></dd></div>
+      <div><dt>電話</dt><dd><a data-tel data-cta="access-tel" href="tel:05017200222"><span data-tel-text>050-1720-0222</span></a></dd></div>
+      <!-- 要確認: 電話番号。公式サイトのトップ・フッターは 050-1720-0222、既存のディナーLP／ランチLPは 050-1721-2963。ここではトップページの番号を使っている。 -->
+      <div><dt>席数</dt><dd>約150席（メインダイニング、テラス席、個室）。全席禁煙</dd></div>
+    </dl>
+    <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Re%3AWharf%20%E6%A8%AA%E6%B5%9C%E8%B5%A4%E3%83%AC%E3%83%B3%E3%82%AC%E5%80%89%E5%BA%AB2%E5%8F%B7%E9%A4%A8">Googleマップで場所を確認する</a>
+  </div>
+</section>
+
+<!-- ========== よくある質問 ========== -->
+<section class="band" id="faq">
+  <div class="wrap narrow faq">
+    <p class="en">FAQ</p>
+    <h2>よくある質問</h2>
+
+    <details>
+      <summary>ポップオーバーのランチセットは、土日も予約できますか？</summary>
+      <p>The Popover Selection Lunch Set は平日（月〜金）限定、1日40食のご用意です。</p>
+    </details>
+    <details>
+      <summary>Lボーンランチコースは土日も予約できますか？</summary>
+      <p>はい。極上Lボーンランチコースは毎日のランチタイムにご注文いただけます（2名様より）。当日お選びいただくウィークエンドランチコース（¥5,000）は土・日・祝日限定です。</p>
+    </details>
+    <details>
+      <summary>予約なしでも利用できますか？</summary>
+      <p>ご予約なしでもご来店いただけますが、状況によりお待ちいただく場合があります。お電話かオンラインでのご予約をおすすめします。The Popover Selection Lunch Set をご希望の場合は、予約ページで同名のプランをお選びください。</p>
+    </details>
+    <details>
+      <summary>ランチのラストオーダーは何時ですか？</summary>
+      <p>ランチは11:00〜15:00、ラストオーダーは14:30です。</p>
+      <!-- 要確認: 公式トップページには「ハンバーガーのラストオーダーは15時まで」とあり、ランチLPのFAQ・PDF・予約ページの14:30と食い違う。ここでは14:30に合わせている。 -->
+    </details>
+    <details>
+      <summary>テラス席を指定して予約できますか？</summary>
+      <p>テラス席を確約できるプランを、極上Lボーンランチコース（2名様限定）などでご用意しています。天候によりテラス席をご利用いただけない場合があります。</p>
+    </details>
+    <details>
+      <summary>サービス料はかかりますか？</summary>
+      <p>サービス料として、お会計の10%を頂戴します。</p>
+    </details>
+    <details>
+      <summary>子ども連れでも利用できますか？</summary>
+      <p>はい、ご利用いただけます。お子様メニューのご用意はありませんが、可能な限り対応します。大人と同じ内容のコースを召し上がる場合は、大人の人数としてご予約ください。</p>
+    </details>
+    <details>
+      <summary>一人でも利用できますか？</summary>
+      <p>はい、ご利用いただけます。</p>
+    </details>
+    <details>
+      <summary>ドレスコードはありますか？</summary>
+      <p>ドレスコードはございません。</p>
+    </details>
+    <details>
+      <summary>車椅子で利用できますか？</summary>
+      <p>ご利用いただけます。ご予約時にお知らせください。</p>
+    </details>
+    <details>
+      <summary>アレルギーには対応してもらえますか？</summary>
+      <p>はい。ご予約の際にお申し付けください。</p>
+    </details>
+    <details>
+      <summary>喫煙できる場所はありますか？</summary>
+      <p>店内は全席禁煙です。</p>
+    </details>
+  </div>
+</section>
+
+<!-- ========== ご予約 ========== -->
+<section class="band reserve" id="reserve">
+  <div class="wrap">
+    <p class="en">Reservation</p>
+    <h2>ご予約</h2>
+    <p>Webでは24時間ご予約を受け付けています。</p>
+    <div class="reserve__btns">
+      <a class="btn btn--web" data-reserve data-cta="reserve" href="https://www.tablecheck.com/ja/shops/re-wharf/reserve">ランチを予約する</a>
+      <a class="btn btn--tel" data-tel data-cta="reserve-tel" href="tel:05017200222"><span>電話で予約する<small data-tel-text>050-1720-0222</small></span></a>
+    </div>
+    <p class="note">＊アレルギー等で召し上がれない食材がございましたら、ご予約の際にお伝えください。<br>＊営業時間中はお電話が繋がりにくい場合があります。オンライン予約がおすすめです。</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <img src="img/logo.png" width="568" height="390" alt="Re : Wharf STEAK &amp; SEAFOOD" loading="lazy" decoding="async">
+  <p>〒231-0001 神奈川県横浜市中区新港1丁目1番2号<br>横浜赤レンガ倉庫2号館 3階</p>
+  <p><a href="https://rewharf.jp/">Re&nbsp;:&nbsp;Wharf 公式サイト</a></p>
+  <p>© Re&nbsp;:&nbsp;Wharf</p>
+</footer>
+
+<!-- 画面下に固定する予約バー -->
+<div class="bar">
+  <div class="bar__in">
+    <a class="btn btn--web" data-reserve data-cta="sticky" href="https://www.tablecheck.com/ja/shops/re-wharf/reserve">ランチを予約する</a>
+    <a class="btn btn--tel" data-tel data-cta="sticky-tel" href="tel:05017200222" aria-label="電話で予約する">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+    </a>
+  </div>
+</div>
+
+<script>
+// ===== 予約リンクと電話番号はここだけを書き換える =====
+// 計測用パラメータを付けるときは RESERVE_URL の末尾に足す。
+// 例: 'https://www.tablecheck.com/ja/shops/re-wharf/reserve?utm_source=google&utm_medium=cpc&utm_campaign=lunch'
+const RESERVE_URL = 'https://www.tablecheck.com/ja/shops/re-wharf/reserve';
+const TEL = '050-1720-0222'; // 公式サイト（トップページ）記載の番号
+
+document.querySelectorAll('[data-reserve]').forEach(a => { a.href = RESERVE_URL; });
+document.querySelectorAll('[data-tel]').forEach(a => { a.href = 'tel:' + TEL.replace(/-/g, ''); });
+document.querySelectorAll('[data-tel-text]').forEach(e => { e.textContent = TEL; });
+</script>
+</body>
+</html>

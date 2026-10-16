@@ -1,0 +1,32 @@
+<title>Re:Wharf LP プレビュー</title>
+<meta name="robots" content="noindex">
+<style>
+/* 配色と書体は LP 本体（lp/rewharf-*/index.html）と同じ。上にロゴの帯、下にリンク2本だけの入口ページ */
+:root { --bg: #FFFDF6; --fg: #3E3E3E; --accent: #896030; --line: #CCC3AE; --band: #5B2A28; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #1E1A17; --fg: #F0EAD8; --accent: #DEBC95; --line: #4A4039; --band: #3F1C1B; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #1E1A17; --fg: #F0EAD8; --accent: #DEBC95; --line: #4A4039; --band: #3F1C1B; color-scheme: dark; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: "Times New Roman", "游明朝", "Yu Mincho", "Hiragino Mincho ProN", serif; line-height: 1.8; }
+header { background: var(--band); padding-block: 28px; padding-inline: 16px; display: flex; justify-content: center; }
+header img { width: 120px; max-width: 100%; height: auto; display: block; }
+main { max-width: 560px; margin: 0 auto; padding-block: 40px 64px; padding-inline: 16px; }
+h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 8px; text-wrap: balance; }
+p { margin: 0 0 24px; font-size: 0.9375rem; }
+ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+li { border-bottom: 1px solid var(--line); }
+a { display: block; padding: 18px 4px; color: inherit; text-decoration: none; }
+a:hover, a:focus-visible { color: var(--accent); outline: 2px solid var(--accent); outline-offset: 2px; }
+a small { display: block; font-size: 0.8125rem; color: var(--accent); }
+</style>
+<header>
+  <img src="logo.png" width="568" height="390" alt="Re : Wharf STEAK &amp; SEAFOOD">
+</header>
+<main>
+  <h1>Re:Wharf LP プレビュー</h1>
+  <p>ドラフト（未公開）。スマホで開くとスマホ表示、PCで開くとPC表示になります。</p>
+  <ul>
+    <li><a href="lunch/index.html">ランチLP<small>平日限定ポップオーバーランチセット ¥3,000</small></a></li>
+    <li><a href="anniversary/index.html">記念日ディナーLP<small>花束・メッセージプレート、Re : Wharf Course ¥25,000</small></a></li>
+    <li><a href="christmas/index.html">クリスマスLP<small>クリスマス限定プラン ディナー ¥30,000／ランチ ¥11,000（2024年の内容を仮置き）</small></a></li>
+    <li><a href="date/index.html">デートLP<small>テラス席確約プラン、Tボーンとシーフードプラッターをふたりで</small></a></li>
+  </ul>
+</main>
